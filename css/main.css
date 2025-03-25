@@ -111,6 +111,7 @@ header a {
     font-size: 40px;
     padding-top: 40px;
     display: inline-block;
+    text-decoration: none;
 }
 
 a.active {
@@ -119,7 +120,7 @@ a.active {
 
 footer {
     width: 100%;
-    text-align: center;
+    text-align: right;
     padding: 1em;
 }
 
