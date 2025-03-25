@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -22,10 +23,19 @@
     </header>
     <main class="container">
         <!-- Contenido -->
-         <picture
-            <source srcset="esPjo.JPG" type="image/JPG">
-            <img src="img/esPjo.JPG" alt="esPjo" width="300">
-        </picture>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/camion.JPG" width="100%">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/yO.JPG" width="100%">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/esPjo.JPG" width="100%">
+              </div>
+            </div>
+        </div>
         <section>
             <header>
                 <h1>bi3nVenidX</h1>
@@ -41,5 +51,16 @@
             </div>
         </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
 </body>
 </html>
