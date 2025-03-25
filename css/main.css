@@ -225,23 +225,7 @@ img {
         max-width: 100px;
     
 }
-/* Laptop / Tablet */
-@media (max-width: 768px) {
-    #logotype {
-        width: 50px;    
-    }
-    body {
-        font-size: 16px;
-    }
-    h1{
-        font-size: 3.5em;
-        font-weight: 700;
-    }
-    header a{
-        font-size: 20px;
-        font-weight: 700;
-    }
-}
+
 
 
 header a {
@@ -250,23 +234,14 @@ header a {
     display: inline-block;
     text-decoration: none;
 }
-/* Escritorio */
-@media (min-width: 1024px) {
-    body {
-      font-size: 18px;
-    }
-    header a {
-        color: var(--text-color);
-        font-size: 40px;
-    }
-}
+
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 2.5em;
 }
 
 h2 {
@@ -295,6 +270,40 @@ img {
 
 header {
     width: 100%;
+}
+
+/* Laptop / Tablet */
+@media (max-width: 768px) {
+    #logotype {
+        width: 50px;    
+    }
+    body {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    h1{
+        font-size: 3em;
+        font-weight: 700;
+    }
+    header a{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+    header a {
+        color: var(--text-color);
+        font-size: 40px;
+    }
+    h1{
+        font-size: 3em;
+        font-weight: 700;
+    }
 }
 
 nav ul {
