@@ -1,5 +1,44 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&family=Share+Tech+Mono&family=Syne+Mono&display=swap');
+
+html {
+    /* 
+    * box-sizing
+    * default: 'box-sizing: content-box'
+    * @see: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
+    */
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+:root {
+    --bg-color: #ff0000;
+    --text-color: #000000;
+    --font-family: 'Rubik Pixels', sans-serif, 'Share Tech Mono', monospace, 'Syne Mono', monospace;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #ff0000;
+        --text-color: #000;
+    }
+}
+
+body {
+    font-family: var(--font-family);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* mobile. Tamaño mínimo recomendado */
+    font-size: 14px;
+    line-height: 1.4em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
 main.container {
     padding: 2em 0;
 }
@@ -26,7 +65,7 @@ nav ul li {
 
 header#main-header,
 footer#main-footer {
-    background-color: #000;
+    background-color: #fc0000;
     color: #FFF;
 }
 
@@ -38,8 +77,8 @@ p, li {
     max-width: 80ch;
 }
 
-a.box-link {
-    color: #FFF;
+a.box-link { /*color of the box link letters*/
+    color: #ffffff;
     min-width: 42px;
     background-color: #000;
 }

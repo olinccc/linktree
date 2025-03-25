@@ -3,8 +3,7 @@
 * A modern, HTML5-ready alternative to CSS resets
 * @see: https://necolas.github.io/normalize.css 
 */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-@import url('scroll.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&family=Share+Tech+Mono&family=Syne+Mono&display=swap');
 
 html {
     /* 
@@ -19,9 +18,20 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+:root {
+    --bg-color: #ff0000;
+    --text-color: #000000;
+    --font-family: 'Rubik Pixels', sans-serif, 'Share Tech Mono', monospace, 'Syne Mono', monospace;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #ff0000;
+        --text-color: #000;
+    }
+}
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--font-family);
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +39,8 @@ body {
     /* mobile. Tamaño mínimo recomendado */
     font-size: 14px;
     line-height: 1.4em;
-    background-color: #e8e8e8;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     overflow-x: hidden;
 }
 
@@ -52,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 4em;
 }
 
 h2 {
@@ -95,20 +106,11 @@ nav ul li {
     display: inline;
 }
 
-a.box-link {
-    color: #000;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 0.25em .5em;
-    text-transform: uppercase;
-    min-width: 42px;
-    background-color: #fff;
-    transition: all 300ms ease-out;
-}
-
-a.box-link:hover {
-    transition: all 100ms ease-in;
-    filter: invert(1);
+header a {
+    color: var(--text-color);
+    font-size: 40px;
+    padding-top: 40px;
+    display: inline-block;
 }
 
 a.active {
