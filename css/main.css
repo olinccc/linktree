@@ -279,11 +279,11 @@ header {
     }
     body {
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 800;
     }
     h1{
         font-size: 3em;
-        font-weight: 700;
+        font-weight:8;
     }
     header a{
         font-size: 20px;
