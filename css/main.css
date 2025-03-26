@@ -327,6 +327,7 @@ a.active {
 footer {
     width: 100%;
     text-align: right;
+    margin-right: 0%;
     padding: 1em;
 }
 
